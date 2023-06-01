@@ -73,4 +73,16 @@ public class ResponseDTO<T> {
     public void setContent(T content) {
         this.content = content;
     }
+
+    public int getState() {
+        return state;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public T getContent() {
+        return content;
+    }
 }

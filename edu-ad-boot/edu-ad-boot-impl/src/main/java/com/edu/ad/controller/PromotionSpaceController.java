@@ -17,14 +17,14 @@ import java.util.List;
  * @author ice
  * @since 2023-05-19
  */
-@RestController
-@RequestMapping("/ad/space")
+//@RestController
+//@RequestMapping("/ad/space")
 public class PromotionSpaceController {
 
     @Autowired
     private IPromotionSpaceService promotionSpaceService;
 
-    @RequestMapping("/getAllSpaces")
+//    @RequestMapping("/getAllSpaces")
     public List<PromotionSpace> getAllSpaces() {
         return promotionSpaceService.list();
     }

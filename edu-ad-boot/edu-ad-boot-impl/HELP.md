@@ -16,3 +16,9 @@ run edu-ad-boot-impl module
 then input `http://localhost:8001/ad/space/getAllSpaces` in web browser, will get the page
 
 ![img.png](img.png)
+
+### GET Ad by space key
+
+input `http://localhost:8001/ad/getAdBySpaceKey?spaceKey=top` in web browser, will get the page
+
+![img_1.png](img_1.png)

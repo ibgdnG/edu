@@ -1,6 +1,7 @@
 package org.edu.ad.dto;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * <p>
@@ -31,6 +32,8 @@ public class PromotionSpaceDTO {
     private Date updateTime;
 
     private Integer isDel;
+
+    private List<PromotionAdDTO> promotionAdDTOList;
 
     public Integer getId() {
         return id;
@@ -80,6 +83,14 @@ public class PromotionSpaceDTO {
         this.isDel = isDel;
     }
 
+    public List<PromotionAdDTO> getPromotionAdDTOList() {
+        return promotionAdDTOList;
+    }
+
+    public void setPromotionAdDTOList(List<PromotionAdDTO> promotionAdDTOList) {
+        this.promotionAdDTOList = promotionAdDTOList;
+    }
+
     @Override
     public String toString() {
         return "PromotionSpaceDTO{" +
@@ -89,6 +100,7 @@ public class PromotionSpaceDTO {
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 ", isDel=" + isDel +
+                ", promotionAdDTOList=" + promotionAdDTOList +
                 '}';
     }
 }
